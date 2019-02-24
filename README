@@ -7,6 +7,11 @@ It also shows recent transactions(up to 5).
 python3.6(or above) and the 'bismuthclient' python module required.
 
 To run the app:
+   python3 -m pip install bismuthclient
+   (if permission error occurs, "python3 -m pip install bismuthclient --user" instead)
+   
+   git clone https://github.com/HeavensGold/bisbalance.git
+   (or Download zip file from this repository. what you need is just the 'bisbalance.py' file)
 
    python3 bisbalance.py
 
