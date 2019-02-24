@@ -1,0 +1,14 @@
+This a simple command-line balance checker for Bismuth cryptocurrency.
+You just put 'wallet.derr' file in the same directory and press ENTER when asked a Bismuth address.
+You can also look up any wallet addresses if you input the address when asked.
+
+It also shows recent transactions(up to 5).  
+
+python3.6(or above) and the 'bismuthclient' python module required.
+
+To run the app:
+
+   python3 bisbalance.py
+
+
+
