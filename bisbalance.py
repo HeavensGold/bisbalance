@@ -24,6 +24,9 @@ def main():
             wallet_address = wallet_address + [ client.address ]
     else:
         wallet_address = [ x.strip() for x in str(wallet_address).split(',') ]
+        if len(wallet_address) < 2 :
+            for addr in  wallet_address:
+                wallet_address = [ x.strip() for x in str(addr).split(' ') ]
         if client.address:
             wallet_address = wallet_address + [ client.address ]
     for address in wallet_address:
