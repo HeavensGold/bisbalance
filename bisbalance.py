@@ -22,6 +22,10 @@ def main():
         wallet_address = default_wallet_address
         if client.address:
             wallet_address = wallet_address + [ client.address ]
+    else:
+        wallet_address = [ x.strip() for x in str(wallet_address).split(',') ]
+        if client.address:
+            wallet_address = wallet_address + [ client.address ]
     for address in wallet_address:
         print(f"Looking up address {address} ...")
         balance = client.command("balanceget", [address])
