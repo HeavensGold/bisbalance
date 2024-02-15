@@ -1,1 +1,1 @@
-bismuthclient
+git+https://github.com/HeavensGold/BismuthClient.git@unofficial#egg=bismuthclient&subdirectory=bismuthclient
